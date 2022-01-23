@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html style="height: 100%;width: 100%;">
+<head>
+  <meta charset="utf-8">
+
+  <title>神枪手</title>
+
+  <!--http://www.html5rocks.com/en/mobile/mobifying/-->
+  <meta name="viewport"
+        content="width=device-width,user-scalable=no,initial-scale=1, minimum-scale=1,maximum-scale=1"/>
+
+  <!--https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html-->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="format-detection" content="telephone=no">
+
+  <!-- force webkit on 360 -->
+  <meta name="renderer" content="webkit"/>
+  <meta name="force-rendering" content="webkit"/>
+  <!-- force edge on IE -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <meta name="msapplication-tap-highlight" content="no">
+
+  <!-- force full screen on some browser -->
+  <meta name="full-screen" content="yes"/>
+  <meta name="x5-fullscreen" content="true"/>
+  <meta name="360-fullscreen" content="true"/>
+  
+  <!-- force screen orientation on some browser -->
+  <meta name="screen-orientation" content=""/>
+  <meta name="x5-orientation" content="">
+
+  <!--fix fireball/issues/3568 -->
+  <!--<meta name="browsermode" content="application">-->
+  <meta name="x5-page-mode" content="app">
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?e3b7f9f3396533bb9d55cf5296c60ed7";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();</script>
+<script>
+		function getQueryVariable(variable) {
+	var query = window.location.search.substring(1);
+	var vars = query.split("&");
+	for (var i = 0; i < vars.length; i++) {
+		var pair = vars[i].split("=");
+		if (pair[0] == variable) {
+			return pair[1];
+		}
+	}
+	return (false);
+}
+function isRecentlyOpen() {
+	var now = Date.parse(new Date()) / 1000;
+	if (now - 180 > parseInt(getQueryVariable("t") / 1000)) {
+		window.location.href = "https://mp.weixin.qq.com/s/wTHp6RJFtsakU6h47Be98g";
+	}
+}
+// isRecentlyOpen();
+</script>
+  <link rel="stylesheet" type="text/css" href="style-mobile.css"/>
+
+</head>
+<body style="margin: 0; width: 100%;height: 100%;" align="center">
+	<iframe width="100%" height="100%" src="http://www.wesane.com/game/818/" style="border:none""></iframe>
+  </body>
+</html>
